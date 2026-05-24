@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+}
+
+/* ESCENA */
+.story-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/pancho-asustar1-bg.png');
+    background-size:95% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* TEXTOS */
+.dialog-top{
+    position:absolute;
+
+    top:8%;
+    left:28%;
+
+    padding:18px 24px;
+
+    border-radius:28px;
+
+    background:rgba(126,134,83,.38);
+
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+
+    color:white;
+
+    font-size:30px;
+    line-height:1.15;
+
+    z-index:20;
+}
+
+.dialog-bottom{
+    position:absolute;
+
+    top:26%;
+    left:38%;
+
+    padding:18px 24px;
+
+    border-radius:28px;
+
+    background:rgba(126,134,83,.38);
+
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+
+    color:white;
+
+    font-size:28px;
+    line-height:1.15;
+
+    z-index:20;
+}
+
+/* ROCA */
+.rock{
+    position:absolute;
+
+    left:30%;
+    top:35%;
+
+    width:70px;
+
+    z-index:15;
+}
+
+.rock img{
+    width:100%;
+
+    transition:.45s ease;
+}
+
+/* INTERACCIÓN */
+.rock img:hover{
+    transform:translate(450px, 200px) rotate(30deg) scale(1.08);
+}
+
+/* AUDIO */
+.music-btn{
+    position:absolute;
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+    background:#d67b84;
+}
+
+/* FLECHAS */
+.nav-btn{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+
+    z-index:40;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background:#b53c47;
+}
+
+.right-btn{
+    right:3%;
+}
+
+.nav-btn img{
+    width:42px;
+}

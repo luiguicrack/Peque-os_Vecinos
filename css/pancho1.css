@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+}
+
+/* ESCENA */
+.story-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/pancho-portada.png');
+    background-size:94% 97%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* BOTÓN AUDIO */
+.music-btn{
+    position:absolute;
+
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+}
+
+/* FLECHA */
+.nav-btn{
+    position:absolute;
+
+    right:4%;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background: #b53c47;;
+}
+
+.nav-btn img{
+    width:42px;
+}
+
+/* MENÚ */
+.bottom-menu{
+    position:absolute;
+
+    bottom:3%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#b53f4f;
+
+    padding:14px 32px;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.bottom-menu button{
+    border:none;
+    background:none;
+
+    color:#F9EEDE;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-family:'Londrina Solid', cursive;
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.bottom-menu button:hover{
+    transform:scale(1.1);
+}
+
+.bottom-menu button img{
+    width:34px;
+}

@@ -1,0 +1,140 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+}
+
+/* ESCENA */
+.story-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/pancho3-bg.png');
+    background-size:95% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* AUDIO */
+.music-btn{
+    position:absolute;
+
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+}
+
+/* FLECHAS */
+.nav-btn{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background: #b53c47;
+}
+
+.left-btn{
+    left:3%;
+}
+
+.right-btn{
+    right:3%;
+}
+
+.nav-btn img{
+    width:42px;
+}
+
+/* TEXTO */
+.dialog-box{
+    position:absolute;
+
+    top:16%;
+    right:12%;
+
+    background:rgba(126, 134, 83, 0.45);
+
+    padding:22px 26px;
+
+    border-radius:18px;
+
+    color:#fff7ea;
+
+    font-size:30px;
+    line-height:1.15;
+
+    z-index:20;
+
+    backdrop-filter:blur(2px);
+}
+
+/* PIES */
+.feet-animation{
+    position:absolute;
+
+    top:0%;
+    left:25%;
+
+    width:340px;
+
+    animation:walk 1s infinite ease-in-out;
+}
+
+.feet-animation img{
+    width:100%;
+    height:auto;
+}
+
+/* MOVIMIENTO */
+@keyframes walk{
+
+    0%{
+        transform:translateX(0px);
+    }
+
+    50%{
+        transform:translateX(50px);
+    }
+
+    100%{
+        transform:translateX(0px);
+    }
+}

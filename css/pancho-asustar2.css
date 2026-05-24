@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+}
+
+/* ESCENA */
+.story-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/pancho-asustar2-bg.png');
+    background-size:95% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* TEXTO */
+.dialog-box{
+    position:absolute;
+
+    top:14%;
+    left:9%;
+
+    padding:18px 24px;
+
+    border-radius:28px;
+
+    background:rgba(70,70,70,.32);
+
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+
+    color:white;
+
+    font-size:30px;
+    line-height:1.2;
+
+    z-index:20;
+}
+
+/* AUDIO */
+.music-btn{
+    position:absolute;
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+    background:#d67b84;
+}
+
+/* FLECHAS */
+.nav-btn{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+
+    z-index:40;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background:#b53c47;
+}
+
+.left-btn{
+    left:3%;
+}
+
+.right-btn{
+    right:3%;
+}
+
+.nav-btn img{
+    width:42px;
+}

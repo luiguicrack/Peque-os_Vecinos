@@ -1,0 +1,177 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+}
+
+/* ESCENA */
+.story-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/pancho-ayuda2-bg.png');
+    background-size:95% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* CAJAS */
+.dialog-box{
+    position:absolute;
+
+    background:rgba(60,70,55,0.35);
+
+    padding:28px;
+
+    border-radius:25px;
+
+    color:white;
+
+    backdrop-filter:blur(3px);
+
+    border:2px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.05),
+    0 8px 30px rgba(0,0,0,0.15);
+
+    z-index:20;
+}
+
+/* TEXTO ARRIBA */
+.top-box{
+    top:20%;
+    left:18%;
+
+    width:340px;
+
+    font-size:28px;
+    line-height:1.2;
+}
+
+/* TEXTO ABAJO */
+.bottom-box{
+    bottom:25%;
+    left:17%;
+
+    width:380px;
+
+    font-size:27px;
+    line-height:1.2;
+}
+
+/* PANCHO */
+.pancho-jump{
+    position:absolute;
+
+    right:18%;
+    bottom:12%;
+
+    width:350px;
+
+    z-index:15;
+
+    animation:panchoJump 1.4s infinite ease-in-out;
+}
+
+.pancho-jump img{
+    width:100%;
+}
+
+/* SALTO */
+@keyframes panchoJump{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    18%{
+        transform:translateY(-38px);
+    }
+
+    36%{
+        transform:translateY(0px);
+    }
+
+    52%{
+        transform:translateY(-18px);
+    }
+
+    68%{
+        transform:translateY(0px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* AUDIO */
+.music-btn{
+    position:absolute;
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+    background:#d67b84;
+}
+
+/* FLECHAS */
+.nav-btn{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+
+    z-index:40;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background:#b53c47;
+}
+
+.left-btn{
+    left:3%;
+}
+
+.right-btn{
+    right:3%;
+}
+
+.nav-btn img{
+    width:42px;
+}

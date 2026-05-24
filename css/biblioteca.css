@@ -1,0 +1,225 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+    background:#c97a34;
+}
+
+/* ESCENA */
+.library-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/bookshelf-bg.png');
+    background-size:100% 99%;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
+
+/* FLECHA */
+.nav-btn{
+    position:absolute;
+    left:4%;
+    top:48%;
+
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    background:#bf5f5b;
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+    z-index:20;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background: #b53c47;;
+}
+
+.nav-btn img{
+    width:42px;
+}
+
+/* LIBROS */
+.book{
+    position:absolute;
+    display:block;
+    z-index:10;
+
+    transition:.35s ease;
+}
+
+.book img{
+    width:100%;
+    height:auto;
+
+    user-select:none;
+    -webkit-user-drag:none;
+}
+
+/* HOVER */
+.book:hover{
+    transform:scale(1.18);
+}
+
+/* POSICIONES */
+
+/* PANELA */
+.panela{
+    width:200px;
+
+    left:25%;
+    top:26%;
+}
+
+/* AGUITA */
+.aguita{
+    width:180px;
+
+    left:40%;
+    top:21%;
+}
+
+/* TINTO */
+.tinto{
+    width:200px;
+
+    left:66%;
+    top:22%;
+}
+
+/* PANCHO */
+.pancho{
+    width:105px;
+
+    left:48%;
+    top:55%;
+}
+
+/* LUNA */
+.luna{
+    width:170px;
+
+    left:61%;
+    top:52%;
+}
+
+/* MENÚ */
+.bottom-menu{
+    position:absolute;
+    bottom:3%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#b53f4f;
+
+    padding:14px 32px;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+
+    z-index:20;
+}
+
+.bottom-menu button{
+    border:none;
+    background:none;
+
+    color:#F9EEDE;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-family:'Londrina Solid', cursive;
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.bottom-menu button:hover{
+    transform:scale(1.1);
+}
+
+.bottom-menu button img{
+    width:34px;
+    height:34px;
+}
+
+/* BOTÓN MÚSICA */
+.music-btn{
+    position:absolute;
+
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+    background:#d67b84;
+}
+
+/* TITULO */
+.title{
+    position:absolute;
+
+    top:1%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    margin:0;
+
+    text-align:center;
+
+    font-family:'Londrina Solid', cursive;
+    font-weight:900;
+
+    font-size:72px;
+    line-height:0.9;
+
+    color:#fff7ea;
+
+    z-index:15;
+
+    text-transform:none;
+
+    user-select:none;
+}
+
+.title span{
+    font-size:78px;
+}

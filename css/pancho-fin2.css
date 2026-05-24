@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Londrina Solid', cursive;
+}
+
+/* ESCENA */
+.story-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background-image:url('../img/pancho-fin.png');
+    background-size:95% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* BOTÓN HISTORIAS */
+.more-btn{
+    position:absolute;
+
+    right:24%;
+    top:60%;
+
+    transform:translateY(-50%);
+
+    padding:18px 28px;
+
+    border-radius:28px;
+
+    background:#aebdc2;
+
+    color:white;
+    text-decoration:none;
+
+    font-size:34px;
+    line-height:1.05;
+    text-align:center;
+
+    transition:.3s ease;
+
+    z-index:20;
+}
+
+.more-btn:hover{
+    transform:translateY(-50%) scale(1.08);
+    background:#5F7782;
+}
+
+/* AUDIO */
+.music-btn{
+    position:absolute;
+    top:28px;
+    left:28px;
+
+    width:62px;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+    font-size:26px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:.3s ease;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+    background:#d67b84;
+}
+
+/* FLECHAS */
+.nav-btn{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s ease;
+
+    z-index:40;
+}
+
+.nav-btn:hover{
+    transform:translateY(-50%) scale(1.1);
+    background:#b53c47;
+}
+
+.left-btn{
+    left:3%;
+}
+
+.nav-btn img{
+    width:42px;
+}
+

@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #d9d4c3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESCENA PRINCIPAL */
+.main-scene {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/city.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* LOGO */
+.logo-container {
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 550px;
+    transition: transform 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* ANIMALES — sin hover CSS ni @keyframes para evitar conflicto con JS */
+.animals img {
+    position: absolute;
+    cursor: grab;
+    /* Solo transicionamos left/bottom/top para el regreso suave */
+    /* transform NO va aquí — el JS lo maneja completamente */
+    transition: left 0.6s ease, bottom 0.6s ease, top 0.6s ease;
+    z-index: 10;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.animals img:active {
+    cursor: grabbing;
+}
+
+/* Clase que agrega JS mientras se arrastra */
+.animals img.dragging {
+    transition: none !important;
+    cursor: grabbing !important;
+    z-index: 100 !important;
+}
+
+/* POSICIONES */
+.bird {
+    width: 140px;
+    left: 8%;
+    bottom: 8%;
+}
+
+.dog {
+    width: 300px;
+    left: 18%;
+    bottom: 9%;
+}
+
+.cat {
+    width: 220px;
+    left: 45%;
+    bottom: 10%;
+}
+
+.mouse {
+    width: 110px;
+    left: 68%;
+    bottom: 10%;
+}
+
+.swallow {
+    width: 150px;
+    left: 78%;
+    bottom: 11%;
+}
+
+/* BOTÓN SIGUIENTE */
+/* BOTÓN SIGUIENTE */
+.next-btn {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: #c76b74;
+
+    width: 85px;
+    height: 85px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+    z-index: 20;
+
+    /* CENTRAR ICONO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+}
+
+.next-btn:hover {
+    transform: translateY(-50%) scale(1.12);
+    background: #b53c47;
+}
+
+.next-btn img{
+    width:46px;
+    height:46px;
+    object-fit:contain;
+    display:block;
+}
+
+.bottom-menu{
+    position:absolute;
+    bottom:3%;
+    left:50%;
+    transform:translateX(-50%);
+    background:#b53f4f;
+    padding:14px 32px;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    gap:28px;
+    z-index:20;
+}
+
+.bottom-menu button{
+    border:none;
+    background:none;
+    color:#F9EEDE;
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-family:'Londrina Solid', cursive;
+    font-size:22px;
+    font-weight:400;
+
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:.3s ease;
+    letter-spacing:1px;
+}
+
+.bottom-menu button:hover{
+    transform:scale(1.1);
+}
+
+.bottom-menu button img{
+    width:34px;
+    height:34px;
+    object-fit:contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .logo {
+        width: 300px;
+    }
+
+    .dog {
+        width: 240px;
+        left: 12%;
+    }
+
+    .cat {
+        width: 170px;
+    }
+
+    .mouse {
+        width: 80px;
+    }
+
+    .swallow {
+        width: 110px;
+    }
+
+    .bird {
+        width: 100px;
+    }
+
+    .bottom-menu {
+        gap: 15px;
+        padding: 12px 20px;
+    }
+
+    .bottom-menu button {
+        font-size: 16px;
+    }
+
+    .next-btn{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+/* BOTÓN MÚSICA */
+
+.music-btn{
+
+    position:absolute;
+
+    top:30px;
+    left:30px;
+
+    width:65px;
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#c76b74;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    transition:0.3s ease;
+}
+
+.music-btn:hover{
+
+    transform:scale(1.1);
+
+    background:#d67b84;
+}
+
+.next-btn img{
+    width:46px;
+    height:46px;
+    object-fit:contain;
+    display:block;
+}

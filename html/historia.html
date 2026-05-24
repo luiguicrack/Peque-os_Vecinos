@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia | Pequeños Vecinos</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/historia.css">
+</head>
+<body>
+
+    <!-- AUDIO -->
+    <audio id="bgMusic" loop>
+        <source src="../audio/ciudad.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- BOTÓN MÚSICA -->
+    <button id="musicBtn" class="music-btn">🔊</button>
+
+    <!-- ESCENA -->
+    <div class="story-scene">
+
+        <!-- FLECHA IZQUIERDA -->
+        <a href="creditos.html" class="nav-btn left-btn">
+            <img src="../img/flecha-left.png" alt="Anterior">
+        </a>
+
+        <!-- FLECHA DERECHA -->
+        <a href="biblioteca.html" class="nav-btn right-btn">
+            <img src="../img/flecha-right.png" alt="Siguiente">
+        </a>
+
+        <!-- GLOBO 1 -->
+        <div id="dialog1" class="dialog-box hidden"></div>
+
+        <!-- GLOBO 2 -->
+        <div id="dialog2" class="dialog-box hidden"></div>
+
+        <!-- RATÓN — dos imágenes superpuestas para el hover -->
+        <div class="mouse-wrapper">
+            <img src="../img/pancho.png"       class="mouse-normal" alt="Pancho">
+            <img src="../img/pancho-hover.png" class="mouse-hover"  alt="Pancho hover">
+        </div>
+
+        <!-- BOTÓN CONTINUAR -->
+        <button class="continue-btn" id="continueBtn">CONTINUAR</button>
+
+        <!-- MENÚ -->
+        <div class="bottom-menu">
+
+            <button onclick="window.location.href='../index.html'">
+                <img src="../img/home.png" alt="Inicio">
+                <span>INICIO</span>
+            </button>
+
+            <button onclick="window.location.href='../html/creditos.html'">
+                <img src="../img/info.png" alt="Detalles">
+                <span>DETALLES</span>
+            </button>
+
+            <button onclick="window.location.href='../html/biblioteca.html'">
+                <img src="../img/book.png" alt="Historias">
+                <span>HISTORIAS</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="../js/historia.js"></script>
+</body>
+</html>
