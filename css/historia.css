@@ -172,6 +172,7 @@ body {
 
 /* ── BOTÓN CONTINUAR ─────────────── */
 .continue-btn{
+    font-family:'Londrina Solid', cursive;
     position:absolute;
     bottom:18%;
     left:50%;
