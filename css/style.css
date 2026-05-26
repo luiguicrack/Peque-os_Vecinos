@@ -20,7 +20,7 @@ body {
 /* LOGO */
 .logo-container {
     position: absolute;
-    top: 1%;
+    top: 6%;
     width: 100%;
     z-index: 20;
     display: flex;
