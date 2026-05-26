@@ -12,7 +12,7 @@ body{
     height:100vh;
 
     background-image:url('../img/bookshelf-bg.png');
-    background-size:100% 99%;
+    background-size:100% 100%;
     background-position:center;
     background-repeat:no-repeat;
 
@@ -206,7 +206,7 @@ body{
     text-align:center;
 
     font-family:'Londrina Solid', cursive;
-    font-weight:900;
+    font-weight:normal;
 
     font-size:72px;
     line-height:0.9;
