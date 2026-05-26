@@ -3,27 +3,34 @@ const kids = document.getElementById("kidsSound");
 const musicBtn = document.getElementById("musicBtn");
 
 // 🔊 volúmenes
-music.volume = 0.3;   // principal
-kids.volume = 0.15;   // 👈 más bajito (ambiente)
+if(music) music.volume = 0.3;
+if(kids) kids.volume = 0.15;
 
 // ▶️ activar en primer click
 window.addEventListener("click", () => {
-    music.play().catch(() => {});
-    kids.play().catch(() => {});
+
+    music?.play().catch(() => {});
+    kids?.play().catch(() => {});
+
 }, { once:true });
 
 let playing = true;
 
 // 🔘 botón controla ambos
-musicBtn.addEventListener("click", () => {
+musicBtn?.addEventListener("click", () => {
 
     if(playing){
-        music.pause();
-        kids.pause();
+
+        music?.pause();
+        kids?.pause();
+
         musicBtn.innerHTML = "🔇";
+
     }else{
-        music.play();
-        kids.play();
+
+        music?.play();
+        kids?.play();
+
         musicBtn.innerHTML = "🔊";
     }
 
