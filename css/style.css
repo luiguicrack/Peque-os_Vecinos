@@ -62,13 +62,13 @@ body {
 
 /* POSICIONES */
 .bird {
-    width: 250px;
+    width: 200px;
     left: 8%;
     bottom: 8%;
 }
 
 .dog {
-    width: 200px;
+    width: 240px;
     left: 18%;
     bottom: 6%;
 }
