@@ -63,8 +63,8 @@ body {
 /* GLOBO ARRIBA */
 .dialog-left{
     position:absolute;
-    left:18%;
-    top:15%;
+    left:12%;
+    top:20%;
     z-index:15;
     animation:fadeInUp .4s ease;
 }
