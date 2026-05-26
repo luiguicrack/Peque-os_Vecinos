@@ -89,7 +89,7 @@ body {
 
 .dialog-box{
     background:#fff8ef;
-    padding:28px 44px;
+    padding: 20px 44px 35px 44px;
     border-radius:38px;
 
     color:#406E81;
@@ -111,7 +111,7 @@ body {
 
     font-family:'Londrina Solid', cursive;
     font-size:50px;
-    font-weight:900;
+    font-weight:normal;
 
     text-align: center;
 
@@ -126,7 +126,7 @@ body {
 
     font-family:'Londrina Solid', cursive;
     font-size:34px;
-    font-weight:400;
+    font-weight:normal;
 
     line-height:1.1;
 
