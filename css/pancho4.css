@@ -104,7 +104,7 @@ body{
 .mouse-jump{
     position:absolute;
 
-    left:50%;
+    left:35%;
     bottom:15%;
 
     width:380px; /* 👈 más grande */
@@ -127,7 +127,7 @@ body{
 
     position:absolute;
 
-    left:35%;
+    left:50%;
     bottom:-18px;
 
     transform:translateX(-50%);
