@@ -180,10 +180,10 @@ body {
     border:none;
     background:#6c8a87;
     color:#fff7df;
-    padding:22px 55px;
-    border-radius:35px;
-    font-size:32px;
-    font-weight:900;
+    padding:15px 50px;
+    border-radius:25px;
+    font-size:50px;
+    font-weight:normal;
     cursor:pointer;
     z-index:20;
     transition:.3s ease;
