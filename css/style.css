@@ -20,7 +20,7 @@ body {
 /* LOGO */
 .logo-container {
     position: absolute;
-    top: 6%;
+    top: 1%;
     width: 100%;
     z-index: 20;
     display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .dog {
-    width: 300px;
+    width: 260px;
     left: 18%;
     bottom: 9%;
 }
