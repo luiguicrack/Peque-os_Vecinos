@@ -1,138 +1,3 @@
-body{
-    margin:0;
-    overflow:hidden;
-    font-family:'Londrina Solid', cursive;
-}
-
-/* ESCENA */
-.story-scene{
-    position:relative;
-    width:100%;
-    height:100vh;
-
-    background-image:url('../img/pancho4-bg.png');
-    background-size:95% 100%;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
-/* AUDIO */
-.music-btn{
-    position:absolute;
-
-    top:28px;
-    left:28px;
-
-    width:62px;
-    height:62px;
-
-    border:none;
-    border-radius:18px;
-
-    background:#c76b74;
-
-    color:white;
-    font-size:26px;
-
-    cursor:pointer;
-
-    z-index:50;
-
-    transition:.3s ease;
-}
-
-.music-btn:hover{
-    transform:scale(1.1);
-}
-
-/* FLECHAS */
-.nav-btn{
-    position:absolute;
-
-    top:50%;
-    transform:translateY(-50%);
-
-    width:78px;
-    height:78px;
-
-    border-radius:18px;
-
-    background:#c76b74;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    transition:.3s ease;
-}
-
-.nav-btn:hover{
-    transform:translateY(-50%) scale(1.1);
-    background: #b53c47;
-}
-
-.left-btn{
-    left:3%;
-}
-
-.right-btn{
-    right:3%;
-}
-
-.nav-btn img{
-    width:42px;
-}
-
-/* TEXTO */
-.dialog-box{
-    position:absolute;
-
-    left:15%;
-    top:28%;
-
-    color:#fff7ea;
-
-    font-size:34px;
-    line-height:1.15;
-
-    z-index:20;
-
-    text-shadow:0 3px 6px rgba(0,0,0,0.18);
-}
-
-/* RATÓN */
-.mouse-jump{
-    position:absolute;
-
-    left:39%;
-    bottom:18%;
-
-    width:350px;
-
-    animation:jump 2s infinite ease-in-out;
-}
-
-.mouse-jump img{
-    width:100%;
-    height:auto;
-}
-
-/* ANIMACIÓN */
-@keyframes jump{
-
-    0%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-30px);
-    }
-
-    100%{
-        transform:translateY(0px);
-    }
-}
-
 /* RATÓN */
 .mouse-jump{
     position:absolute;
@@ -140,9 +5,17 @@ body{
     left:40%;
     bottom:15%;
 
-    width:280px;
+    width:380px; /* 👈 más grande */
 
-    animation:jump 0.9s infinite;
+    animation:none; /* 👈 ya no salta solo */
+
+    cursor:pointer;
+    transition: transform 0.2s ease;
+}
+
+.mouse-jump:hover{
+    animation:jump 0.9s infinite; /* 👈 ahora salta en hover */
+    transform: scale(1.05);
 }
 
 .mouse-jump img{
@@ -170,10 +43,14 @@ body{
 
     filter:blur(4px);
 
-    animation:shadowJump 0.9s infinite;
+    animation:none; /* 👈 no siempre activa */
 }
 
-/* SALTO REAL */
+.mouse-jump:hover::after{
+    animation:shadowJump 0.9s infinite; /* 👈 solo en hover */
+}
+
+/* SALTO */
 @keyframes jump{
 
     0%{
