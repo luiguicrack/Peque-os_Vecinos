@@ -78,10 +78,9 @@ body{
 
 /* PANELA */
 .panela{
-    width:200px;
-
+    width:220px;
     left:23%;
-    top:29.5%;
+    top:27%;
 }
 
 /* AGUITA */
@@ -94,26 +93,26 @@ body{
 
 /* TINTO */
 .tinto{
-    width:200px;
+    width:220px;
 
     left:66%;
-    top:22%;
+    top:23%;
 }
 
 /* PANCHO */
 .pancho{
-    width:105px;
+    width:120px;
 
     left:48%;
-    top:55%;
+    top:55.5%;
 }
 
 /* LUNA */
 .luna{
-    width:170px;
+    width:190px;
 
     left:61%;
-    top:52%;
+    top:53.5%;
 }
 
 /* MENÚ */
