@@ -107,9 +107,9 @@ body{
     left:39%;
     bottom:18%;
 
-    width:280px;
+    width:350px;
 
-    animation:jump 1.4s infinite ease-in-out;
+    animation:jump 2s infinite ease-in-out;
 }
 
 .mouse-jump img{
