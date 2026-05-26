@@ -96,7 +96,7 @@ body{
 
     border-radius:18px;
 
-    color:#fff7ea;
+    color:#F9EEDE;
 
     font-size:30px;
     line-height:1.15;
@@ -115,12 +115,16 @@ body{
 
     width:340px;
 
-    animation:walk 1s infinite ease-in-out;
+    animation:none;
 }
 
 .feet-animation img{
     width:100%;
     height:auto;
+}
+
+.feet-animation:hover{
+    animation:walk 1s infinite ease-in-out;
 }
 
 /* MOVIMIENTO */
@@ -131,7 +135,7 @@ body{
     }
 
     50%{
-        transform:translateX(50px);
+        transform:translateX(90px);
     }
 
     100%{
