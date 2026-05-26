@@ -12,7 +12,8 @@ body{
     height:100vh;
 
     background-image:url('../img/bookshelf-bg.png');
-    background-size:100% 100%;
+    background-color:7e3a187;
+    background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
 
