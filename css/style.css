@@ -62,27 +62,27 @@ body {
 
 /* POSICIONES */
 .bird {
-    width: 150px;
+    width: 200px;
     left: 8%;
     bottom: 8%;
 }
 
 .dog {
     width: 260px;
-    left: 18%;
-    bottom: 6%;
+    left: 25%;
+    bottom: 10%;
 }
 
 .cat {
     width: 190px;
     left: 45%;
-    bottom: 7%;
+    bottom: 12%;
 }
 
 .mouse {
     width: 110px;
     left: 68%;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 .swallow {
