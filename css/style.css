@@ -62,7 +62,7 @@ body {
 
 /* POSICIONES */
 .bird {
-    width: 200px;
+    width: 220px;
     left: 8%;
     bottom: 8%;
 }
@@ -74,21 +74,21 @@ body {
 }
 
 .cat {
-    width: 190px;
-    left: 45%;
+    width: 220px;
+    left: 50%;
     bottom: 12%;
 }
 
 .mouse {
-    width: 110px;
+    width: 120px;
     left: 68%;
     bottom: 15%;
 }
 
 .swallow {
-    width: 150px;
-    left: 78%;
-    bottom: 11%;
+    width: 170px;
+    left: 80%;
+    bottom: 18%;
 }
 
 /* BOTÓN SIGUIENTE */
