@@ -135,7 +135,7 @@ body{
     }
 
     50%{
-        transform:translateX(90px);
+        transform:translateX(150px);
     }
 
     100%{
